@@ -28,7 +28,7 @@
     "supertest": "npm restart && mocha tests/supertest && npm stop",
     "chakram": "npm restart && mocha tests/chakram && npm stop",
     "chai-http": "npm restart && mocha tests/chai-http && npm stop",
-    "newman": "npm restart && newman -c tests/newman/postman-collection.json -e tests/newman/environments/local-machine.json --html tests/newman/report.html && npm stop"
+    "newman": "npm restart && newman -c tests/newman/tests.json -e tests/newman/environments/local-machine.json --html tests/newman/report.html && npm stop"
   },
   "dependencies": {
     "body-parser": "^1.14.2",
@@ -42,6 +42,7 @@
     "morgan": "^1.6.1",
     "newman": "^2.0.0-beta.6",
     "ono": "^2.1.1",
+    "supertest": "^1.1.0",
     "supertest-as-promised": "^2.0.2",
     "tv4": "^1.2.7"
   },
