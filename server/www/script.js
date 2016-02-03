@@ -38,7 +38,9 @@ $(function() {
   function createTrend(trend) {
     $.post('api/trends', trend)
       .done(function() {
-        location.reload();
+        setTimeout(function() {
+          location.reload();
+        }, 500);
       })
       .fail(errorHandler)
   }
