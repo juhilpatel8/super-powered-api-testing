@@ -1,0 +1,74 @@
+{
+	"id": "32708110-e2c0-1201-40d0-be54d1ecefc4",
+	"name": "Trendsetter API Tests",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"owner": "305754",
+			"lastUpdatedBy": "305754",
+			"lastRevision": 132172302,
+			"id": "d7f8de86-7cfe-665c-45eb-6923d2469b00",
+			"name": "Test Fixtures",
+			"description": "This folder contains test fixtures.  Be sure to run this folder before running any of the other folders, as tests will fail if these fixtures haven't been created yet.",
+			"order": [
+				"2ff62329-5ed0-a70c-293d-942b77d210ff"
+			]
+		},
+		{
+			"owner": "305754",
+			"lastUpdatedBy": "305754",
+			"lastRevision": 132172364,
+			"id": "d3d987e2-6964-c65a-f3aa-659dda7fb886",
+			"name": "Test GET /trends",
+			"description": "The `GET /trends` endpoint returns an array of all trends. If there are no trends, then an empty array is returned.",
+			"order": [
+				"2889e58b-aee0-a366-49f0-921450ef48e2"
+			]
+		}
+	],
+	"timestamp": 1454430783557,
+	"owner": "305754",
+	"remoteLink": "https://www.getpostman.com/collections/8c57e46ff786cf5a0a7e",
+	"public": false,
+	"requests": [
+		{
+			"folder": "d3d987e2-6964-c65a-f3aa-659dda7fb886",
+			"id": "2889e58b-aee0-a366-49f0-921450ef48e2",
+			"name": "with no data",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "No trends have been added yet, so this request should return an empty array",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": [],
+			"url": "{{root}}/trends",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "32708110-e2c0-1201-40d0-be54d1ecefc4"
+		},
+		{
+			"folder": "d7f8de86-7cfe-665c-45eb-6923d2469b00",
+			"id": "2ff62329-5ed0-a70c-293d-942b77d210ff",
+			"name": "{{root}}",
+			"dataMode": "params",
+			"data": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "",
+			"headers": "",
+			"method": "GET",
+			"pathVariables": [],
+			"url": "{{root}}",
+			"preRequestScript": "console.log('\\n' +\n    ' _______  _______  _______  _______  __   __  _______  __    _ \\n' +\n    '|       ||       ||       ||       ||  |_|  ||   _   ||  |  | |\\n' +\n    '|    _  ||   _   ||  _____||_     _||       ||  |_|  ||   |_| |\\n' +\n    '|   |_| ||  | |  || |_____   |   |  |       ||       ||       |\\n' +\n    '|    ___||  |_|  ||_____  |  |   |  |       ||       ||  _    |\\n' +\n    '|   |    |       | _____| |  |   |  | ||_|| ||   _   || | |   |\\n' +\n    '|___|    |_______||_______|  |___|  |_|   |_||__| |__||_|  |__|\\n'\n);\n",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "32708110-e2c0-1201-40d0-be54d1ecefc4"
+		}
+	]
+}
