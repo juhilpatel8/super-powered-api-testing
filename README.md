@@ -5,7 +5,7 @@ Super-Powered API Testing
 This code repository accompanies a presentation I gave in Austin, Texas on February 4th, 2016.  Video of the presentation is [available on YouTube](https://youtu.be/bhrg-7f2e8k?t=1800), and the slide deck is [right here](https://docs.google.com/presentation/d/1oZknCWA6M186Pmfx43LVmWwdQvaqFhZLXX-_5lZkpQw/edit?usp=sharing).
 
 #### What's in this repo?
-This project contains a [sample REST API](https://scribe-stage.getpostman.com/documentation/generate/sync?collection_id=5918f361-3230-f395-75d4-dc1b1604ca46&owner=305754&user_id=305754&access_token=fd66c3cbe2e35e95875a&sync_env=premium), and a full suites of accompanying tests.  The exact same test suite is repeated four time, in four different API test frameworks.  The intent is to demonstrate the difference between the various frameworks, such as syntax, features, and ease-of-use.
+This project contains a [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD01OTE4ZjM2MS0zMjMwLWYzOTUtNzVkNC1kYzFiMTYwNGNhNDYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj1mZDY2YzNjYmUyZTM1ZTk1ODc1YSZzeW5jX2Vudj1wcmVtaXVt), and a full suites of accompanying tests.  The exact same test suite is repeated four time, in four different API test frameworks.  The intent is to demonstrate the difference between the various frameworks, such as syntax, features, and ease-of-use.
 
 The following API test frameworks are covered:
 
@@ -35,13 +35,13 @@ Usage
 --------------------------
 Once you've installed everything, there are a few commands you can run.
 
-| command                | description 
+| command                | description
 |------------------------|------------------------------------
 | `npm run chakram`      | Run the [Chakram](https://github.com/dareid/chakram) test suite*
 | `npm run supertest`    | Run the [SuperTest](https://github.com/visionmedia/supertest) test suite*
 | `npm run chai-http`    | Run the [Chai-HTTP](https://github.com/chaijs/chai-http) test suite*
 | `npm run newman`       | Run the [Postman](http://getpostman.com) test suite in [Newman](https://www.npmjs.com/package/newman)*
-| `npm start`            | Start a local web server running the [sample REST API](https://scribe-stage.getpostman.com/documentation/generate/sync?collection_id=5918f361-3230-f395-75d4-dc1b1604ca46&owner=305754&user_id=305754&access_token=fd66c3cbe2e35e95875a&sync_env=premium)
+| `npm start`            | Start a local web server running the [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD01OTE4ZjM2MS0zMjMwLWYzOTUtNzVkNC1kYzFiMTYwNGNhNDYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj1mZDY2YzNjYmUyZTM1ZTk1ODc1YSZzeW5jX2Vudj1wcmVtaXVt)
 | `npm stop`             | Stop the web server
 | `npm restart`          | Stop the web server (if it's running), and then start it
 
