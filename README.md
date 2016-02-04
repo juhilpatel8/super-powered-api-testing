@@ -1,47 +1,53 @@
 Super-Powered API Testing
 ============================
-#### Using API test frameworks
+#### How and why to test your API
 
+This code repository accompanies a presentation I gave in Austin, Texas on February 4th, 2016.  Video of the presentation is [available on YouTube](https://youtu.be/bhrg-7f2e8k?t=1800), and the slide deck is [right here](https://docs.google.com/presentation/d/1oZknCWA6M186Pmfx43LVmWwdQvaqFhZLXX-_5lZkpQw/edit?usp=sharing).
 
-This project demonstrates four popular API testing frameworks with a sample API.
+#### What's in this repo?
+This project contains a [sample REST API](https://scribe-stage.getpostman.com/documentation/generate/sync?collection_id=5918f361-3230-f395-75d4-dc1b1604ca46&owner=305754&user_id=305754&access_token=fd66c3cbe2e35e95875a&sync_env=premium), and a full suites of accompanying tests.  The exact same test suite is repeated four time, in four different API test frameworks.  The intent is to demonstrate the difference between the various frameworks, such as syntax, features, and ease-of-use.
 
-[Chai HTTP](https://github.com/chaijs/chai-http)
+The following API test frameworks are covered:
 
-[Chakram](https://github.com/dareid/chakram)
+- [Chai HTTP](https://github.com/chaijs/chai-http)
 
-[Newman](https://github.com/postmanlabs/newman)
+- [Chakram](https://github.com/dareid/chakram)
 
-[Supertest](https://github.com/visionmedia/supertest)
+- [Postman](http://getpostman.com)
+
+- [Supertest](https://github.com/visionmedia/supertest)
 
 
 Installation
 --------------------------
-To install and run the Super-Powered API Testing demo, make sure you have node 4 or greater and npm 2 or greater installed on your system. Install dependencies with `npm install`. Run the server with `npm start` (Windows users: Start the server in a seperate shell). Run the tests on the server with `npm run test`. To stop the server, run `npm stop` (Windows: stop the instance in the server shell).
 
+1. __Install Node.js__<br>
+To run the demo, you'll need to have [Node.js 4.0 or greater](https://nodejs.org/en/) installed on your system.
 
-
-Contributing
---------------------------
-I welcome any contributions, enhancements, and bug-fixes.  [File an issue](https://github.com/BigstickCarpet/super-powered-api-testing/issues) on GitHub and [submit a pull request](https://github.com/BigstickCarpet/super-powered-api-testing/pulls).
-
-#### Building/Testing
-To build/test the project locally on your computer:
-
-1. __Clone this repo__<br>
+2. __Clone this repo__<br>
 `git clone https://github.com/bigstickcarpet/super-powered-api-testing.git`
 
-2. __Install dependencies__<br>
+3. __Install dependencies__<br>
 `npm install`
 
-3. __Start the local web server__<br>
-`npm start` (then browse to [http://localhost:8080/](http://bigstickcarpet.com/postman-bdd/index.html)
 
-4. __Run the tests__<br>
-`npm test`
+Usage
+--------------------------
+Once you've installed everything, there are a few commands you can run.
+
+| command                | description 
+|------------------------|------------------------------------
+| `npm run chakram`      | Run the [Chakram](https://github.com/dareid/chakram) test suite*
+| `npm run supertest`    | Run the [SuperTest](https://github.com/visionmedia/supertest) test suite*
+| `npm run chai-http`    | Run the [Chai-HTTP](https://github.com/chaijs/chai-http) test suite*
+| `npm run newman`       | Run the [Postman](http://getpostman.com) test suite in [Newman](https://www.npmjs.com/package/newman)*
+| `npm start`            | Start a local web server running the [sample REST API](https://scribe-stage.getpostman.com/documentation/generate/sync?collection_id=5918f361-3230-f395-75d4-dc1b1604ca46&owner=305754&user_id=305754&access_token=fd66c3cbe2e35e95875a&sync_env=premium)
+| `npm stop`             | Stop the web server
+| `npm restart`          | Stop the web server (if it's running), and then start it
+
+> **Note:**  Commands marked with an asterisk (*) rely on the web server running in the background.  On Mac and Linux systems, the web server will automatically be started beforehand and stopped afterward.  On Windows systems, you need to run the web server yourself in a separate console window via the `npm start` command
 
 
 License
 --------------------------
 Super-Powered API Testing is 100% free and open-source, under the [MIT license](LICENSE). Use it however you want.
-I
-
