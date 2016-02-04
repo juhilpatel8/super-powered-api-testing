@@ -54,10 +54,10 @@ The [`package.json`](package.json) file includes several scripts to make it easy
 
 | command                | description
 |------------------------|------------------------------------
-| `npm run chakram`      | Run the [Chakram](https://github.com/dareid/chakram) test suite*
-| `npm run supertest`    | Run the [SuperTest](https://github.com/visionmedia/supertest) test suite*
-| `npm run chai-http`    | Run the [Chai-HTTP](https://github.com/chaijs/chai-http) test suite*
-| `npm run newman`       | Run the [Postman](http://getpostman.com) test suite in [Newman](https://www.npmjs.com/package/newman)*
+| `npm run chakram`      | Run the [Chakram](tests/chakram) test suite*
+| `npm run supertest`    | Run the [SuperTest](tests/supertest) test suite*
+| `npm run chai-http`    | Run the [Chai-HTTP](tests/chai-http) test suite*
+| `npm run newman`       | Run the [Postman](tests/newman) test suite in [Newman](https://www.npmjs.com/package/newman)*
 | `npm start`            | Start a local web server running the [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD01OTE4ZjM2MS0zMjMwLWYzOTUtNzVkNC1kYzFiMTYwNGNhNDYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj1mZDY2YzNjYmUyZTM1ZTk1ODc1YSZzeW5jX2Vudj1wcmVtaXVt)
 | `npm stop`             | Stop the web server
 | `npm restart`          | Stop the web server (if it's running), and then start it
@@ -93,7 +93,9 @@ Start the local web server (using the `npm start` command above), and then brows
 
 
 #### Option 3: Run them in Postman
-To run the Postman tests, just import the [`tests.json`](tests/newman/tests.json) file into Postman. (you can do this by clicking the "_import_" button in the header bar)
+To run the Postman tests, just import the [`tests.json`](https://raw.githubusercontent.com/BigstickCarpet/super-powered-api-testing/master/tests/newman/tests.json) and [`localhost-environment.json`](https://raw.githubusercontent.com/BigstickCarpet/super-powered-api-testing/master/tests/newman/localhost-environment.json) files into Postman. (you can do this by clicking the "_import_" button in the header bar)
+
+> **Note:** The `localhost-environment.json` file creates a [Postman environment](http://www.getpostman.com/docs/environments) that points to the local web server ([http://localhost:8080](http://localhost:8080)). Be sure to select this environment from the drop-down list in Postman, otherwise none of the requests will know where to go.
 
 > **Note:** Make sure you run the two requests in the `00: Setup` folder first.  These requests download [Postman BDD](https://github.com/BigstickCarpet/postman-bdd) and add some test fixtures that are needed by all of the other tests.
 
