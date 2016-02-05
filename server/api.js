@@ -6,10 +6,12 @@ var util = require('./util');
 var trends = [];
 var api = module.exports = express.Router();
 
+
 // Parse HTTP request bodies
 api.use(bodyParser.urlencoded({ extended: false }));
-api.use(bodyParser.json());
-api.use(bodyParser.json({type: 'text'}));
+api.use(bodyParser.json({type: function(req) {
+  return /json|text|undefined/.test(req.headers['content-type']);
+}}));
 
 
 // GET /trends
