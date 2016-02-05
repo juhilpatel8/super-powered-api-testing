@@ -9,7 +9,7 @@ This code repository accompanies a presentation I gave in Austin, Texas on Febru
 [![npm](http://img.shields.io/npm/v/super-powered-api-testing.svg)](https://www.npmjs.com/package/super-powered-api-testing)
 [![License](https://img.shields.io/npm/l/super-powered-api-testing.svg)](LICENSE)
 
-- **[What is this project?](#whats-in-this-repo)**
+- **[What is this project?](#what-is-this-project)**
 
 - **[Installation instructions](#installation)**
 
@@ -28,7 +28,7 @@ This code repository accompanies a presentation I gave in Austin, Texas on Febru
     - [Postman](#option-4-postman)
 
 
-What's in this project?
+What is this project?
 --------------------------
 This project contains a [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD01OTE4ZjM2MS0zMjMwLWYzOTUtNzVkNC1kYzFiMTYwNGNhNDYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj1mZDY2YzNjYmUyZTM1ZTk1ODc1YSZzeW5jX2Vudj1wcmVtaXVt), and a full suites of accompanying tests.  The exact same test suite is repeated four times, in four different API test frameworks.  The intent is to demonstrate the difference between the various frameworks, such as syntax, features, and ease-of-use.
 
