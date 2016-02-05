@@ -9,9 +9,9 @@ This code repository accompanies a presentation I gave in Austin, Texas on Febru
 [![npm](http://img.shields.io/npm/v/super-powered-api-testing.svg)](https://www.npmjs.com/package/super-powered-api-testing)
 [![License](https://img.shields.io/npm/l/super-powered-api-testing.svg)](LICENSE)
 
-- **[What's in this repo?](#whats-in-this-repo)**
+- **[What is this project?](#whats-in-this-repo)**
 
-- **[Installation](#installation)**
+- **[Installation instructions](#installation)**
 
 - **[Running the tests in a CLI](#running-the-tests-in-a-cli)**
 
@@ -28,16 +28,16 @@ This code repository accompanies a presentation I gave in Austin, Texas on Febru
     - [Postman](#option-4-postman)
 
 
-What's in this repo?
+What's in this project?
 --------------------------
 This project contains a [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD01OTE4ZjM2MS0zMjMwLWYzOTUtNzVkNC1kYzFiMTYwNGNhNDYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj1mZDY2YzNjYmUyZTM1ZTk1ODc1YSZzeW5jX2Vudj1wcmVtaXVt), and a full suites of accompanying tests.  The exact same test suite is repeated four times, in four different API test frameworks.  The intent is to demonstrate the difference between the various frameworks, such as syntax, features, and ease-of-use.
 
 The following API test frameworks are covered:
 
-- [Chai HTTP](https://github.com/chaijs/chai-http)
-- [Chakram](https://github.com/dareid/chakram)
-- [Postman](http://getpostman.com)
-- [Supertest](https://github.com/visionmedia/supertest)
+- [Chai HTTP](tests/chai-http)
+- [Chakram](tests/chakram)
+- [Postman](tests/postman)
+- [Supertest](tests/supertest)
 
 
 Installation
@@ -50,7 +50,7 @@ To run the demo, you'll need to have [Node.js 4.0 or greater](https://nodejs.org
 `git clone https://github.com/bigstickcarpet/super-powered-api-testing.git`
 
 3. __Install dependencies__<br>
-`npm install`
+`npm install` (this may take a while)
 
 
 Running the tests in a CLI
@@ -62,7 +62,8 @@ The [`package.json`](package.json) file includes several scripts to make it easy
 | `npm run chakram`      | Run the [Chakram](tests/chakram) test suite*
 | `npm run supertest`    | Run the [SuperTest](tests/supertest) test suite*
 | `npm run chai-http`    | Run the [Chai-HTTP](tests/chai-http) test suite*
-| `npm run newman`       | Run the [Postman](tests/newman) test suite in [Newman](https://www.npmjs.com/package/newman)*
+| `npm run newman`       | Run the [Postman](tests/postman) test suite in [Newman](https://www.npmjs.com/package/newman)*
+| `npm test`             | Run **all four** test suites back-to-back. The results will [look like this](https://travis-ci.org/BigstickCarpet/super-powered-api-testing)
 | `npm start`            | Start a local web server running the [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD01OTE4ZjM2MS0zMjMwLWYzOTUtNzVkNC1kYzFiMTYwNGNhNDYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj1mZDY2YzNjYmUyZTM1ZTk1ODc1YSZzeW5jX2Vudj1wcmVtaXVt)
 | `npm stop`             | Stop the web server
 | `npm restart`          | Stop the web server (if it's running), and then start it
