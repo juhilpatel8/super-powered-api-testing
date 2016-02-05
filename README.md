@@ -36,8 +36,8 @@ The following API test frameworks are covered:
 
 - [Chai HTTP](tests/chai-http)
 - [Chakram](tests/chakram)
-- [Postman](tests/postman)
 - [Supertest](tests/supertest)
+- [Postman](tests/postman)
 
 
 Installation
@@ -89,7 +89,7 @@ Supertest, Chakram, and Chai-HTTP all use [Mocha](https://mochajs.org/) as their
 #### Option 2: Run them in a web browser
 Chai-HTTP is the only framework that allows you to run your tests in a web browser. This is a _fantastic_ feature, so definitely try it out.  You can even run your tests in mobile browsers, such as iOS, Android, and Window Phone.
 
-Start the local web server (using the `npm start` command above), and then browse to [http://localhost:8080/tests/chai-http](http://localhost:8080/tests/chai-http/).
+Start the local web server (using the `npm start` command above), and then browse to [http://localhost:8080/tests/chai-http/browser.html](http://localhost:8080/tests/chai-http/browser.html).
 
 > **Bonus!** You can click on any test to see the code for that test.
 
@@ -120,7 +120,7 @@ Select the collection you want to run (in this case, the "_Trendsetter API Tests
 Debugging the tests
 --------------------------
 
-#### Option 1: Node Inspector
+### Option 1: Node Inspector
 If you're running the tests on the command-line, then you can use [`node-inspector`](https://www.npmjs.com/package/node-inspector) to debug them.  Node Inpector is pretty cool because it allows you to debug Node.js code using your web browser's built-in developers tools - complete with breakpoints, stepping, variable inspection, etc!
 
 

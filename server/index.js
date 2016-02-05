@@ -1,20 +1,17 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var ono = require('ono');
-var path = require('path');
-var api = require('./api');
 var modes = require('./modes');
+var static = require('./static');
+var api = require('./api');
 
 var app = express();
 
 // Normal/background/silent modes
-app.use(modes(app));
+app.use(modes);
 
 // Serve static files
-app.use('/', express.static(path.resolve(__dirname, 'www')));
-app.use('/api', express.static(path.resolve(__dirname, '../api')));
-app.use('/tests', express.static(path.resolve(__dirname, '../tests')));
-app.use('/node_modules', express.static(path.resolve(__dirname, '../node_modules')));
+app.use(static);
 
 // Parse HTTP request bodies
 app.use(bodyParser.json());
