@@ -1,9 +1,15 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var ono = require('ono');
 var util = require('./util');
 
 var trends = [];
 var api = module.exports = express.Router();
+
+// Parse HTTP request bodies
+api.use(bodyParser.urlencoded({ extended: false }));
+api.use(bodyParser.json());
+api.use(bodyParser.json({type: 'text'}));
 
 
 // GET /trends

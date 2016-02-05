@@ -1,5 +1,4 @@
 var express = require('express');
-var bodyParser = require('body-parser');
 var ono = require('ono');
 var modes = require('./modes');
 var static = require('./static');
@@ -10,12 +9,8 @@ var app = express();
 // Normal/background/silent modes
 app.use(modes);
 
-// Serve static files
+// Static files
 app.use(static);
-
-// Parse HTTP request bodies
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 
 // REST API
 app.use('/api', api);
