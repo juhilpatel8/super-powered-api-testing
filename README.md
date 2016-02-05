@@ -30,7 +30,7 @@ This code repository accompanies a presentation I gave in Austin, Texas on Febru
 
 What is this project?
 --------------------------
-This project contains a [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD01OTE4ZjM2MS0zMjMwLWYzOTUtNzVkNC1kYzFiMTYwNGNhNDYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj1mZDY2YzNjYmUyZTM1ZTk1ODc1YSZzeW5jX2Vudj1wcmVtaXVt), and a full suites of accompanying tests.  The exact same test suite is repeated four times, in four different API test frameworks.  The intent is to demonstrate the difference between the various frameworks, such as syntax, features, and ease-of-use.
+This project contains a [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD1lNDJlYjE1Ny0zYzI4LWY5ZmEtZDVmOC0wNTU1YzM2NDRlNmYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj02Y2E5NjA4ZjU0ODUwNDgxMzcyNCZzeW5jX2Vudj1wcmVtaXVt), and a full suites of accompanying tests.  The exact same test suite is repeated four times, in four different API test frameworks.  The intent is to demonstrate the difference between the various frameworks, such as syntax, features, and ease-of-use.
 
 The following API test frameworks are covered:
 
@@ -64,7 +64,7 @@ The [`package.json`](package.json) file includes several scripts to make it easy
 | `npm run chai-http`    | Run the [Chai-HTTP](tests/chai-http) test suite*
 | `npm run newman`       | Run the [Postman](tests/postman) test suite in [Newman](https://www.npmjs.com/package/newman)*
 | `npm test`             | Run **all four** test suites back-to-back. The results will [look like this](https://travis-ci.org/BigstickCarpet/super-powered-api-testing)
-| `npm start`            | Start a local web server running the [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD01OTE4ZjM2MS0zMjMwLWYzOTUtNzVkNC1kYzFiMTYwNGNhNDYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj1mZDY2YzNjYmUyZTM1ZTk1ODc1YSZzeW5jX2Vudj1wcmVtaXVt)
+| `npm start`            | Start a local web server running the [sample REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD1lNDJlYjE1Ny0zYzI4LWY5ZmEtZDVmOC0wNTU1YzM2NDRlNmYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj02Y2E5NjA4ZjU0ODUwNDgxMzcyNCZzeW5jX2Vudj1wcmVtaXVt)
 | `npm stop`             | Stop the web server
 | `npm restart`          | Stop the web server (if it's running), and then start it
 
