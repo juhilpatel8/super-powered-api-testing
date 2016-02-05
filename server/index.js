@@ -36,3 +36,12 @@ app.use(function(err, req, res, next) {
 
 // Start the server on port 8080
 app.listen(8080);
+
+// Crash gracefully
+process.on('uncaughtException', function(err) {
+  if (err.code === 'EADDRINUSE') {
+    console.warn('       (The server was already running)');
+    return process.exit();
+  }
+  throw err;
+});
