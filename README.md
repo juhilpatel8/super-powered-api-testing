@@ -99,7 +99,7 @@ Start the local web server (using the `npm start` command above), and then brows
 
 
 #### Option 3: Run them in Postman
-To run the Postman tests, just import the [`tests.json`](https://raw.githubusercontent.com/BigstickCarpet/super-powered-api-testing/master/tests/newman/tests.json) and [`localhost-environment.json`](https://raw.githubusercontent.com/BigstickCarpet/super-powered-api-testing/master/tests/newman/localhost-environment.json) files into Postman. (you can do this by clicking the "_import_" button in the header bar)
+To run the Postman tests, just import the [`tests.json`](https://raw.githubusercontent.com/BigstickCarpet/super-powered-api-testing/master/tests/postman/tests.json) and [`localhost-environment.json`](https://raw.githubusercontent.com/BigstickCarpet/super-powered-api-testing/master/tests/postman/localhost-environment.json) files into Postman. (you can do this by clicking the "_import_" button in the header bar)
 
 > **Note:** The `localhost-environment.json` file creates a [Postman environment](http://www.getpostman.com/docs/environments) that points to the local web server ([http://localhost:8080](http://localhost:8080)). Be sure to select this environment from the drop-down list in Postman, otherwise none of the requests will know where to go.
 
