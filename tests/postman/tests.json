@@ -1,7 +1,7 @@
 {
 	"id": "f499f940-dcca-5f5e-eb22-6ed8f180e37e",
 	"name": "Trendsetter API Tests",
-	"description": "This is a collection of tests for the [Trendsetter REST API](https://documenter.getpostman.com/go?view=Y29sbGVjdGlvbl9pZD1lNDJlYjE1Ny0zYzI4LWY5ZmEtZDVmOC0wNTU1YzM2NDRlNmYmb3duZXI9MzA1NzU0JnVzZXJfaWQ9MzA1NzU0JmFjY2Vzc190b2tlbj02Y2E5NjA4ZjU0ODUwNDgxMzcyNCZzeW5jX2Vudj1wcmVtaXVt).  All of the tests are written in [Postman BDD](https://github.com/BigstickCarpet/postman-bdd#postman-bdd).",
+	"description": "This is a collection of tests for the [Trendsetter REST API](https://documenter.getpostman.com/view/220187/trendsetter-api/2MuEBW).  All of the tests are written in [Postman BDD](https://github.com/BigstickCarpet/postman-bdd#postman-bdd).",
 	"order": [],
 	"folders": [
 		{
@@ -148,7 +148,7 @@
 			"pathVariables": [],
 			"url": "http://bigstickcarpet.com/postman-bdd/dist/postman-bdd.js",
 			"preRequestScript": "",
-			"tests": "// \"install\" Postman BDD\npostman.setGlobalVariable('postmanBDD', responseBody);\n\n\n\n\n\n\nconsole.log('\\n' +\n    ' _______  _______  _______  _______  __   __  _______  __    _ \\n' +\n    '|       ||       ||       ||       ||  |_|  ||   _   ||  |  | |\\n' +\n    '|    _  ||   _   ||  _____||_     _||       ||  |_|  ||   |_| |\\n' +\n    '|   |_| ||  | |  || |_____   |   |  |       ||       ||       |\\n' +\n    '|    ___||  |_|  ||_____  |  |   |  |       ||       ||  _    |\\n' +\n    '|   |    |       | _____| |  |   |  | ||_|| ||   _   || | |   |\\n' +\n    '|___|    |_______||_______|  |___|  |_|   |_||__| |__||_|  |__|'\n);\n",
+			"tests": "// \"install\" Postman BDD\npostman.setGlobalVariable('postmanBDD', responseBody);\n\n\n\n\n\n\nconsole.log(' _______  _______  _______  _______  __   __  _______  __    _ ');\nconsole.log('|       ||       ||       ||       ||  |_|  ||   _   ||  |  | |');\nconsole.log('|    _  ||   _   ||  _____||_     _||       ||  |_|  ||   |_| |');\nconsole.log('|   |_| ||  | |  || |_____   |   |  |       ||       ||       |');\nconsole.log('|    ___||  |_|  ||_____  |  |   |  |       ||       ||  _    |');\nconsole.log('|   |    |       | _____| |  |   |  | ||_|| ||   _   || | |   |');\nconsole.log('|___|    |_______||_______|  |___|  |_|   |_||__| |__||_|  |__|');\n",
 			"currentHelper": "normal",
 			"helperAttributes": "{}",
 			"collectionId": "f499f940-dcca-5f5e-eb22-6ed8f180e37e"
