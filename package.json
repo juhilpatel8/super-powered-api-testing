@@ -14,8 +14,8 @@
     "name": "James Messinger",
     "url": "http://jamesmessinger.com"
   },
-  "license": "MIT",
   "homepage": "https://bigstickcarpet.github.io/super-powered-api-testing",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/BigstickCarpet/super-powered-api-testing.git"
