@@ -5,9 +5,9 @@ Super-Powered API Testing
 This code repository accompanies a presentation I gave in Austin, Texas on February 4th, 2016.  Video of the presentation is [available on YouTube](https://youtu.be/bhrg-7f2e8k?t=1800), and the slide deck is [right here](https://docs.google.com/presentation/d/1oZknCWA6M186Pmfx43LVmWwdQvaqFhZLXX-_5lZkpQw/edit?usp=sharing).
 
 [![Build Status](https://api.travis-ci.org/BigstickCarpet/super-powered-api-testing.svg)](https://travis-ci.org/BigstickCarpet/super-powered-api-testing)
-[![Dependencies](https://david-dm.org/BigstickCarpet/super-powered-api-testing.svg)](https://david-dm.org/BigstickCarpet/super-powered-api-testing)
 [![npm](http://img.shields.io/npm/v/super-powered-api-testing.svg)](https://www.npmjs.com/package/super-powered-api-testing)
 [![License](https://img.shields.io/npm/l/super-powered-api-testing.svg)](LICENSE)
+[![Dependencies](https://david-dm.org/BigstickCarpet/super-powered-api-testing.svg)](https://david-dm.org/BigstickCarpet/super-powered-api-testing)
 
 - **[What is this project?](#what-is-this-project)**
 
